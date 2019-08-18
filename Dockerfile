@@ -26,4 +26,4 @@ RUN sbcl --load quicklisp.lisp --load docker-install-quicklisp.lisp
 RUN python install-maxima-jupyter.py --user --root=`pwd`
 RUN echo quit | jupyter-console --no-confirm-exit --kernel=maxima --ZMQTerminalInteractiveShell.kernel_timeout=240
 
-WORKDIR ${HOME}/maxima-jupyter/examples
+WORKDIR ${HOME}/maxima-jupyter/code
